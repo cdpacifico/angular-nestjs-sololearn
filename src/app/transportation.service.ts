@@ -4,7 +4,6 @@ import { Car } from './car';
 @Injectable({
   providedIn: 'root',
 })
-
 export class TransportationService {
   // NEW CODE
   subaru: Car = { make: 'Subaru', model: 'Outback', miles: 58232 };
@@ -18,5 +17,9 @@ export class TransportationService {
   // NEW CODE
   getCars() {
     return this.cars;
+  }
+
+  addCar(car: Car) {
+    this.cars.push(car);
   }
 }

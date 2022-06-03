@@ -1,6 +1,15 @@
 <div class="container">
-<div class="display">
-  {{username}}
-</div>
-<input [(ngModel)]="username" placeholder="enter a username">
+  <div class="display">
+    {{ username }}
+  </div>
+
+  <input [(ngModel)]="username" placeholder="enter a username" />
+
+  <div>
+    <div *ngFor="let car of cars">
+      We have a {{ car.make }} {{ car.model }} with a mileage of {{ car.miles }}
+    </div>
+  </div>
+
+  <button (click)="addCar()">add Car</button>
 </div>
