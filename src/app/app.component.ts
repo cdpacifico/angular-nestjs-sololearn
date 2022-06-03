@@ -6,9 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  // variables declared here will be class variables
+  prefix = 'I am a '; // Class variables... without const, let, var
+  name = 'star student';
 
   speak() {
-    // variables declared here will be method variables
+    const sentence = this.prefix + this.name; // Method variables... must be iitialize with const, let or var
+    return sentence;
   }
 }
