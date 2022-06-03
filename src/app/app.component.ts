@@ -13,4 +13,10 @@ export class AppComponent {
   constructor(private transportationService: TransportationService) {
     this.cars = this.transportationService.getCars();
   }
+
+  counter = 0;
+
+  increment() {
+    this.counter++;
+  }
 }
