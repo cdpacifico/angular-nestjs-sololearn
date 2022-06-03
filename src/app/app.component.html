@@ -5,9 +5,16 @@
       {{ color }}
     </div>
   </div>
+  <br />
   <div class="box">
-    <div *ngFor="let color of colors">
-      {{ color }}
+    <div *ngFor="let color of colors; let i = index">
+      Color {{ i }} is {{ color }}
+    </div>
+  </div>
+  <br />
+  <div class="box">
+    <div *ngFor="let car of cars">
+      {{ car.make }} {{ car.model }} with a mileage of {{ car.miles }}
     </div>
   </div>
 </div>
