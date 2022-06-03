@@ -13,4 +13,6 @@ export class AppComponent {
     const sentence = this.prefix + this.name; // Method variables... must be iitialize with const, let or var
     return sentence;
   }
+
+  colors: string[] = ['red', 'blue', 'green', 'purple'];
 }
